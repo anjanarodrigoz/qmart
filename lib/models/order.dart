@@ -1,3 +1,5 @@
+import 'item.dart';
+
 enum OrderStatus { pending, confirmed, ongoing, deliverd, completed }
 
 class Order {
@@ -14,7 +16,7 @@ class Order {
   final DateTime? postedDate;
   final DateTime? deliveryDate;
   final OrderStatus status;
-  final List items;
+  final List<Item> items;
 
   Order(
       this.orderId,
