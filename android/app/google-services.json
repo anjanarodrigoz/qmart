@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "306430599063",
+    "firebase_url": "https://qmart-6618b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qmart-6618b",
+    "storage_bucket": "qmart-6618b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306430599063:android:b89001b6a6299939cf6ed2",
+        "android_client_info": {
+          "package_name": "com.example.qmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306430599063-4hocl3nlghuimv7h55rqiac46naqq4f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn2g5q9YNuskNo7O3jif5ryuqTKRBZ6Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306430599063-4hocl3nlghuimv7h55rqiac46naqq4f6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
