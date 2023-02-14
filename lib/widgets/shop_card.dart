@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:image_network/image_network.dart';
 
 class ShopCard extends StatelessWidget {
-  const ShopCard({super.key});
-
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -122,35 +120,17 @@ class ShopCard extends StatelessWidget {
                     )),
               ],
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 2.0, horizontal: 10.0),
               child: Text(
                 'Name',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.green.shade900),
               ),
             ),
-
-            // Row(
-            //   children: const [
-            //     Text(
-            //       "Sponsored",
-            //       style: TextStyle(
-            //         fontSize: 14,
-            //       ),
-            //     ),
-            //     SizedBox(
-            //       width: 5,
-            //     ),
-            //     Icon(
-            //       Icons.info,
-            //       color: Colors.grey,
-            //       size: 15,
-            //     )
-            //   ],
-            // ),
-            // const SizedBox(
-            //   height: 8,
-            // ),
             const Padding(
               padding: EdgeInsets.only(left: 10.0),
               child: Text(
@@ -161,8 +141,30 @@ class ShopCard extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 8,
-            ),
+              height: 10,
+            )
+            // Padding(
+            //   padding:
+            //       const EdgeInsets.symmetric(vertical: 2.0, horizontal: 10.0),
+            //   child: Row(
+            //     children: const [
+            //       Text(
+            //         "Sponsored",
+            //         style: TextStyle(
+            //           fontSize: 14,
+            //         ),
+            //       ),
+            //       SizedBox(
+            //         width: 5,
+            //       ),
+            //       Icon(
+            //         Icons.info,
+            //         color: Colors.grey,
+            //         size: 15,
+            //       )
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       ),
