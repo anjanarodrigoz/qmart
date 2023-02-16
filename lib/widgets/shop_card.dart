@@ -84,7 +84,7 @@ class ShopCard extends StatelessWidget {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                color: Colors.white,
                                 borderRadius: BorderRadius.circular(3)),
                             child: Padding(
                               padding: const EdgeInsets.all(5.0),
@@ -98,7 +98,7 @@ class ShopCard extends StatelessWidget {
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                color: Colors.white,
                                 borderRadius: BorderRadius.circular(3)),
                             child: Padding(
                               padding: const EdgeInsets.all(5.0),
@@ -129,7 +129,7 @@ class ShopCard extends StatelessWidget {
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                color: Colors.white,
                                 borderRadius: BorderRadius.circular(3)),
                             child: Padding(
                               padding: const EdgeInsets.all(5.0),

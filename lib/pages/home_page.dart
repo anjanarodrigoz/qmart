@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:qmart/pages/login_page.dart';
 
 import 'history_page.dart';
-import 'shop_page.dart';
+import 'shop_browsing_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Get.to(() => const ShopPage());
+                  Get.to(() => const ShopBrowsingPage());
                 },
                 child: const Text(
                   'New Purchase',

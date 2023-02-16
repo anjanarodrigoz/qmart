@@ -16,7 +16,7 @@ class Order {
   final DateTime? postedDate;
   final DateTime? deliveryDate;
   final OrderStatus status;
-  final List<Item> items;
+  final List<QuarryMaterial> items;
 
   Order(
       this.orderId,
