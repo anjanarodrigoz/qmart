@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_network/image_network.dart';
-import 'package:qmart/pages/quarry_materials_page.dart';
 
-import '../models/item.dart';
+import '../models/quarry_material.dart';
 
 class QuarryMaterialDetailPage extends StatelessWidget {
   final QuarryMaterial quarryMaterial;
@@ -136,7 +135,7 @@ class _OrderProcessingPageState extends State<OrderProcessingPage> {
 
   void _processOrder() async {
     // Simulate order processing time
-    await Future.delayed(const Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 2));
 
     // Show order confirmation dialog
     Get.dialog(AlertDialog(
@@ -145,7 +144,10 @@ class _OrderProcessingPageState extends State<OrderProcessingPage> {
             'Your order for ${widget.quarryMaterial.name} x ${widget.quantity} has been created.'),
         actions: [
           TextButton(
-            onPressed: () => Get.offAll(QuarryMaterialsPage()),
+            onPressed: () {
+              Get.back();
+              Get.back();
+            },
             child: const Text('Go to Home'),
           )
         ]));

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../models/item.dart';
+import '../models/quarry_material.dart';
 
 class QuarryMaterialsController extends GetxController {
   final _quarryMaterials = <QuarryMaterial>[
