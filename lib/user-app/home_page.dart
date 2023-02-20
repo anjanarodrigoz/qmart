@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qmart/models/user.dart';
-import 'package:qmart/pages/login_page.dart';
-import 'package:qmart/pages/user_account_page.dart';
+import 'package:qmart/login_page.dart';
+import 'package:qmart/user-app/user_account_page.dart';
 
 import 'history_page.dart';
 import 'shop_browsing_page.dart';
@@ -62,7 +62,8 @@ class HomePage extends StatelessWidget {
                       email: 'sharkdevelopers.com',
                       mobileNumber: '0769809256',
                       firstName: 'Shark',
-                      password: '12345')));
+                      password: '12345',
+                      location: '')));
                 },
                 child: const Text(
                   'Account',

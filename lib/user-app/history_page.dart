@@ -41,7 +41,7 @@ class HistoryPage extends StatelessWidget {
                               .last,
                           style: TextStyle(
                             color: purchaseOrders[index].status ==
-                                    OrderStatus.deliverd
+                                    OrderStatus.delivered
                                 ? Colors.green
                                 : Colors.orange,
                             fontWeight: FontWeight.bold,
