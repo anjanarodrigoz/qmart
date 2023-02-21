@@ -7,12 +7,12 @@ class QuarryMaterial {
   final int quantity;
 
   QuarryMaterial(
-      {required this.id,
+      {this.id = '',
       required this.name,
-      required this.description,
+      this.description = '',
       required this.price,
       this.quantity = 0,
-      required this.url});
+      this.url = ''});
 
   factory QuarryMaterial.fromJson(Map<String, dynamic> json) {
     return QuarryMaterial(

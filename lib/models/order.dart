@@ -1,6 +1,6 @@
 import 'quarry_material.dart';
 
-enum OrderStatus { pending, confirmed, ongoing, deliverd, completed }
+enum OrderStatus { pending, confirmed, ongoing, delivered, completed }
 
 class Order {
   final String orderId;

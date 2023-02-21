@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:qmart/pages/home_page.dart';
+import 'package:qmart/quarry-app/quarry_home.dart';
+import 'package:qmart/quarry-app/register_page1.dart';
+import 'package:qmart/user-app/home_page.dart';
+
+import 'user-app/user_registor_page.dart';
+import 'widgets/account_switch.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -14,10 +19,12 @@ class _LoginPageState extends State<LoginPage> {
 
   var passwordController;
 
+  bool isSeller = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orangeAccent.shade100,
+      backgroundColor: Colors.orange.shade900,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
         child: Center(
@@ -29,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget loginCard() {
     return SizedBox(
-      height: 600.0,
+      height: 650.0,
       child: Card(
         elevation: 10.0,
         child: Padding(
@@ -68,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             const SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
             TextButton(
               onPressed: () {
@@ -88,11 +95,12 @@ class _LoginPageState extends State<LoginPage> {
                 child: ElevatedButton(
                   child: const Text('Login'),
                   onPressed: () {
-                    Get.off(() => const HomePage());
+                    Get.to(
+                        () => isSeller ? QuarryHomePage() : const HomePage());
                   },
                 )),
             const SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               const Text('Does not have account?'),
@@ -101,22 +109,23 @@ class _LoginPageState extends State<LoginPage> {
                   'Register',
                 ),
                 onPressed: () {
-                  //signup screen
+                  Get.to(isSeller
+                      ? QuarryRegistrationPage1()
+                      : UserRegisterPage());
                 },
               ),
             ]),
+            const Divider(),
+            AccountSwitchWidget(
+              onAccountTypeChanged: (bool) {
+                setState(() {
+                  isSeller = bool;
+                });
+              },
+            ),
           ]),
         ),
       ),
     );
-  }
-
-  void register() {
-    // ToggleSwitch(
-    //         initialLabelIndex: 0,
-    //         totalSwitches: 2,
-    //         labels: const ['Buyer', 'Seller'],
-    //         onToggle: (index) {},
-    //       ),
   }
 }

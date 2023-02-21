@@ -10,5 +10,6 @@ class User {
       required this.mobileNumber,
       required this.firstName,
       required this.password,
-      this.lastName});
+      this.lastName,
+      required String location});
 }
