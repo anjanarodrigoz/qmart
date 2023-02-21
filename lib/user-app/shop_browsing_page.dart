@@ -35,7 +35,9 @@ class _ShopBrowsingPageState extends State<ShopBrowsingPage> {
               rating: quarry['rate'],
               ratingCount: quarry['rateCount'] as int,
               url: quarry['url'],
-              onTap: () {},
+              onTap: () {
+                Get.to(QuarryMaterialsPage());
+              },
             );
           },
         ));

@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:image_network/image_network.dart';
 
 import '../controller/materials_controller.dart';
-import 'order_page.dart';
 
 class QuarryMaterialsPage extends StatelessWidget {
   final _quarryMaterialsController = Get.put(QuarryMaterialsController());
@@ -20,11 +19,7 @@ class QuarryMaterialsPage extends StatelessWidget {
           final quarryMaterial =
               _quarryMaterialsController.quarryMaterials[index];
           return ListTile(
-            onTap: () {
-              Get.to(QuarryMaterialDetailPage(
-                quarryMaterial: quarryMaterial,
-              ));
-            },
+            onTap: () {},
             leading: SizedBox(
                 width: 50,
                 height: 50,
