@@ -10,7 +10,7 @@ class QuarryMaterialsController extends GetxController {
       description:
           'A light-colored igneous rock with grains large enough to be visible with the unaided eye.',
       url: 'https://mcshardscape.com/wp-content/uploads/2019/09/IMG_7671.jpeg',
-      price: 50.0,
+      price: 10.0,
     ),
     QuarryMaterial(
       id: '2',
@@ -19,7 +19,7 @@ class QuarryMaterialsController extends GetxController {
           'A hard crystalline metamorphic rock that takes a high polish.',
       url:
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRICJL7LC49ryp2Ux81tMsyvIf1lgQbQXE1jbv74ufpeU1-vw8ZPpdygRbosf25iHk4oXA&usqp=CAU',
-      price: 75.0,
+      price: 20.0,
     ),
     QuarryMaterial(
       id: '3',
@@ -28,7 +28,7 @@ class QuarryMaterialsController extends GetxController {
           'A sedimentary rock consisting of sand or quartz grains cemented together.',
       url:
           'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
-      price: 35.0,
+      price: 30.0,
     ),
     QuarryMaterial(
       id: '3',
@@ -37,7 +37,7 @@ class QuarryMaterialsController extends GetxController {
           'A sedimentary rock consisting of sand or quartz grains cemented together.',
       url:
           'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
-      price: 35.0,
+      price: 40.0,
     ),
     QuarryMaterial(
       id: '3',
@@ -46,7 +46,7 @@ class QuarryMaterialsController extends GetxController {
           'A sedimentary rock consisting of sand or quartz grains cemented together.',
       url:
           'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
-      price: 35.0,
+      price: 50.0,
     ),
     QuarryMaterial(
       id: '3',
@@ -55,7 +55,7 @@ class QuarryMaterialsController extends GetxController {
           'A sedimentary rock consisting of sand or quartz grains cemented together.',
       url:
           'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
-      price: 35.0,
+      price: 60.0,
     ),
     QuarryMaterial(
       id: '3',
@@ -64,7 +64,7 @@ class QuarryMaterialsController extends GetxController {
           'A sedimentary rock consisting of sand or quartz grains cemented together.',
       url:
           'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
-      price: 35.0,
+      price: 70.0,
     ),
   ];
 
