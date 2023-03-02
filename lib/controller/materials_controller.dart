@@ -6,7 +6,7 @@ class QuarryMaterialsController extends GetxController {
   final _quarryMaterials = <QuarryMaterial>[
     QuarryMaterial(
       id: '1',
-      name: 'Granite',
+      name: 'C1-600mm×600mm',
       description:
           'A light-colored igneous rock with grains large enough to be visible with the unaided eye.',
       url: 'https://mcshardscape.com/wp-content/uploads/2019/09/IMG_7671.jpeg',
@@ -14,7 +14,7 @@ class QuarryMaterialsController extends GetxController {
     ),
     QuarryMaterial(
       id: '2',
-      name: 'Marble',
+      name: '6"×9"',
       description:
           'A hard crystalline metamorphic rock that takes a high polish.',
       url:
@@ -23,7 +23,43 @@ class QuarryMaterialsController extends GetxController {
     ),
     QuarryMaterial(
       id: '3',
-      name: 'Sandstone',
+      name: 'ABC[0-37.5mm]',
+      description:
+          'A sedimentary rock consisting of sand or quartz grains cemented together.',
+      url:
+          'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
+      price: 35.0,
+    ),
+    QuarryMaterial(
+      id: '3',
+      name: 'ABC[0-37.5mm]',
+      description:
+          'A sedimentary rock consisting of sand or quartz grains cemented together.',
+      url:
+          'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
+      price: 35.0,
+    ),
+    QuarryMaterial(
+      id: '3',
+      name: '1 1/2"[25-37.5mm]',
+      description:
+          'A sedimentary rock consisting of sand or quartz grains cemented together.',
+      url:
+          'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
+      price: 35.0,
+    ),
+    QuarryMaterial(
+      id: '3',
+      name: '3/4"[10-19mm]',
+      description:
+          'A sedimentary rock consisting of sand or quartz grains cemented together.',
+      url:
+          'https://rocknsoil.com.au/wp-content/uploads/2022/04/red-sandstone-gravel.jpg',
+      price: 35.0,
+    ),
+    QuarryMaterial(
+      id: '3',
+      name: 'Chips[5-10mm]',
       description:
           'A sedimentary rock consisting of sand or quartz grains cemented together.',
       url:
