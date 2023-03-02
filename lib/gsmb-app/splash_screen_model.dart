@@ -1,6 +1,6 @@
 import 'package:flutter/animation.dart';
 import 'package:get/get.dart';
-import 'package:qmart/gsmb/monitoring_page.dart';
+import 'package:qmart/gsmb-app/monitoring_page.dart';
 
 class SplashScreenViewModel extends GetxController
     with GetSingleTickerProviderStateMixin {
@@ -17,7 +17,7 @@ class SplashScreenViewModel extends GetxController
   void onReady() {
     super.onReady();
     Future.delayed(const Duration(seconds: 3), () {
-      Get.offAll(MonitoringHomePage());
+      Get.offAll(const MonitoringHomePage());
     });
   }
 

@@ -6,6 +6,8 @@ import '../quarry-app/quarryHistory_page.dart';
 import 'report_page.dart';
 
 class MonitoringHomePage extends StatelessWidget {
+  const MonitoringHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
